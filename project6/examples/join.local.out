@@ -1,0 +1,121 @@
+which: no hadoop in (/opt/mvapich2/intel/ib/bin:/opt/intel/2018.1.163/compilers_and_libraries_2018.1.163/linux/bin/intel64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/opt/ibutils/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/home/dxt5888/bin)
+21/04/10 02:27:17 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+21/04/10 02:27:17 INFO pig.ExecTypeProvider: Picked LOCAL as the ExecType
+2021-04-10 02:27:17,450 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0 (r1746530) compiled Jun 01 2016, 23:09:59
+2021-04-10 02:27:17,450 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/dxt5888/project6/examples/pig_1618046837447.log
+2021-04-10 02:27:17,634 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/dxt5888/.pigbootup not found
+2021-04-10 02:27:17,781 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+2021-04-10 02:27:17,811 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: 
+2021-04-10 02:27:17,811 [main] WARN  org.apache.pig.PigServer - ATS is disabled since yarn.timeline-service.enabled set to false
+2021-04-10 02:27:18,466 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: HASH_JOIN
+2021-04-10 02:27:18,628 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2021-04-10 02:27:18,671 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (Tenured Gen) of size 699072512 to monitor. collectionUsageThreshold = 489350752, usageThreshold = 489350752
+2021-04-10 02:27:18,715 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2021-04-10 02:27:18,736 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler$LastInputStreamingOptimizer - Rewrite: POPackage->POForEach to POPackage(JoinPackager)
+2021-04-10 02:27:18,740 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+2021-04-10 02:27:18,740 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+2021-04-10 02:27:18,805 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2021-04-10 02:27:18,819 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2021-04-10 02:27:18,821 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2021-04-10 02:27:18,822 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2021-04-10 02:27:18,835 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=75
+2021-04-10 02:27:18,835 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2021-04-10 02:27:18,846 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2021-04-10 02:27:18,855 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2021-04-10 02:27:18,856 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2021-04-10 02:27:18,856 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1618046838855-0
+2021-04-10 02:27:18,967 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2021-04-10 02:27:18,980 [JobControl] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-04-10 02:27:18,984 [JobControl] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2021-04-10 02:27:19,058 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2021-04-10 02:27:19,063 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2021-04-10 02:27:19,063 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2021-04-10 02:27:19,070 [JobControl] WARN  org.apache.hadoop.io.compress.snappy.LoadSnappy - Snappy native library is available
+2021-04-10 02:27:19,070 [JobControl] WARN  org.apache.hadoop.io.compress.snappy.LoadSnappy - Snappy native library not loaded
+2021-04-10 02:27:19,073 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2021-04-10 02:27:19,077 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2021-04-10 02:27:19,088 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2021-04-10 02:27:19,089 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2021-04-10 02:27:19,089 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2021-04-10 02:27:19,468 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+2021-04-10 02:27:19,468 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases D,E,J,O
+2021-04-10 02:27:19,468 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: D[2,4],D[-1,-1],J[3,4],E[1,4],E[-1,-1],J[3,4] C:  R: O[4,4]
+2021-04-10 02:27:19,472 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2021-04-10 02:27:19,472 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_local_0001]
+2021-04-10 02:27:19,494 [Thread-3] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+2021-04-10 02:27:19,538 [Thread-3] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5f4911f2
+2021-04-10 02:27:19,557 [Thread-3] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2021-04-10 02:27:19,568 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader - Current split being processed file:/home/dxt5888/project6/examples/e.txt:0+64
+2021-04-10 02:27:19,573 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+2021-04-10 02:27:19,651 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+2021-04-10 02:27:19,651 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+2021-04-10 02:27:19,667 [Thread-3] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (Tenured Gen) of size 699072512 to monitor. collectionUsageThreshold = 489350752, usageThreshold = 489350752
+2021-04-10 02:27:19,667 [Thread-3] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2021-04-10 02:27:19,676 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigGenericMapReduce$Map - Aliases being processed per job phase (AliasName[line,offset]): M: D[2,4],D[-1,-1],J[3,4],E[1,4],E[-1,-1],J[3,4] C:  R: O[4,4]
+2021-04-10 02:27:19,716 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+2021-04-10 02:27:19,724 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+2021-04-10 02:27:19,736 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+2021-04-10 02:27:22,430 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2021-04-10 02:27:22,431 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+2021-04-10 02:27:22,434 [Thread-3] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@528ae1bb
+2021-04-10 02:27:22,436 [Thread-3] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2021-04-10 02:27:22,436 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader - Current split being processed file:/home/dxt5888/project6/examples/d.txt:0+11
+2021-04-10 02:27:22,437 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+2021-04-10 02:27:22,476 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2021-04-10 02:27:22,476 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_local_0001]
+2021-04-10 02:27:22,488 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+2021-04-10 02:27:22,489 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+2021-04-10 02:27:22,498 [Thread-3] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (Tenured Gen) of size 699072512 to monitor. collectionUsageThreshold = 489350752, usageThreshold = 489350752
+2021-04-10 02:27:22,498 [Thread-3] WARN  org.apache.pig.data.SchemaTupleBackend - SchemaTupleBackend has already been initialized
+2021-04-10 02:27:22,503 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigGenericMapReduce$Map - Aliases being processed per job phase (AliasName[line,offset]): M: D[2,4],D[-1,-1],J[3,4],E[1,4],E[-1,-1],J[3,4] C:  R: O[4,4]
+2021-04-10 02:27:22,543 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+2021-04-10 02:27:22,548 [Thread-3] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+2021-04-10 02:27:22,548 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000001_0 is done. And is in the process of commiting
+2021-04-10 02:27:25,476 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2021-04-10 02:27:25,480 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000001_0' done.
+2021-04-10 02:27:25,496 [Thread-3] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@49b135b0
+2021-04-10 02:27:25,497 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2021-04-10 02:27:25,499 [Thread-3] INFO  org.apache.hadoop.mapred.Merger - Merging 2 sorted segments
+2021-04-10 02:27:25,509 [Thread-3] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 2 segments left of total size: 132 bytes
+2021-04-10 02:27:25,509 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2021-04-10 02:27:25,894 [Thread-3] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (Tenured Gen) of size 699072512 to monitor. collectionUsageThreshold = 489350752, usageThreshold = 489350752
+2021-04-10 02:27:25,894 [Thread-3] WARN  org.apache.pig.data.SchemaTupleBackend - SchemaTupleBackend has already been initialized
+2021-04-10 02:27:25,919 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigMapReduce$Reduce - Aliases being processed per job phase (AliasName[line,offset]): M: D[2,4],D[-1,-1],J[3,4],E[1,4],E[-1,-1],J[3,4] C:  R: O[4,4]
+2021-04-10 02:27:26,202 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+2021-04-10 02:27:26,203 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2021-04-10 02:27:26,203 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_r_000000_0 is allowed to commit now
+2021-04-10 02:27:26,513 [Thread-3] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_r_000000_0' to file:/home/dxt5888/project6/examples/output
+2021-04-10 02:27:28,506 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+2021-04-10 02:27:28,507 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_r_000000_0' done.
+2021-04-10 02:27:28,987 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2021-04-10 02:27:28,990 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+1.0.4	0.16.0	dxt5888	2021-04-10 02:27:18	2021-04-10 02:27:28	HASH_JOIN
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_local_0001	1	1	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	D,E,J,O	HASH_JOIN	file:///home/dxt5888/project6/examples/output,
+
+Input(s):
+Successfully read 3 records from: "file:///home/dxt5888/project6/examples/e.txt"
+Successfully read 2 records from: "file:///home/dxt5888/project6/examples/d.txt"
+
+Output(s):
+Successfully stored 3 records in: "file:///home/dxt5888/project6/examples/output"
+
+Counters:
+Total records written : 3
+Total bytes written : 0
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_local_0001
+
+
+2021-04-10 02:27:28,993 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2021-04-10 02:27:29,024 [main] INFO  org.apache.pig.Main - Pig script completed in 11 seconds and 848 milliseconds (11848 ms)

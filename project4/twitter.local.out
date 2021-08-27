@@ -1,0 +1,149 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/04/01 19:24:02 INFO SparkContext: Running Spark version 1.5.2
+21/04/01 19:24:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/04/01 19:24:02 INFO SecurityManager: Changing view acls to: dxt5888
+21/04/01 19:24:02 INFO SecurityManager: Changing modify acls to: dxt5888
+21/04/01 19:24:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(dxt5888); users with modify permissions: Set(dxt5888)
+21/04/01 19:24:03 INFO Slf4jLogger: Slf4jLogger started
+21/04/01 19:24:03 INFO Remoting: Starting remoting
+21/04/01 19:24:03 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@198.202.114.33:40396]
+21/04/01 19:24:03 INFO Utils: Successfully started service 'sparkDriver' on port 40396.
+21/04/01 19:24:03 INFO SparkEnv: Registering MapOutputTracker
+21/04/01 19:24:03 INFO SparkEnv: Registering BlockManagerMaster
+21/04/01 19:24:03 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-889db6e5-bd76-4904-b1dc-374e01657d94
+21/04/01 19:24:03 INFO MemoryStore: MemoryStore started with capacity 530.0 MB
+21/04/01 19:24:03 INFO HttpFileServer: HTTP File server directory is /tmp/spark-1113ad97-5fa6-4efb-8e56-74cf4d52c974/httpd-715a5704-67cd-468e-8214-69e96aca3061
+21/04/01 19:24:03 INFO HttpServer: Starting HTTP Server
+21/04/01 19:24:03 INFO Utils: Successfully started service 'HTTP file server' on port 44565.
+21/04/01 19:24:03 INFO SparkEnv: Registering OutputCommitCoordinator
+21/04/01 19:24:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/04/01 19:24:03 INFO SparkUI: Started SparkUI at http://198.202.114.33:4040
+21/04/01 19:24:03 INFO SparkContext: Added JAR file:/home/dxt5888/project4/twitter.jar at http://198.202.114.33:44565/jars/twitter.jar with timestamp 1617330243717
+21/04/01 19:24:03 WARN MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+21/04/01 19:24:03 INFO Executor: Starting executor ID driver on host localhost
+21/04/01 19:24:03 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40923.
+21/04/01 19:24:03 INFO NettyBlockTransferService: Server created on 40923
+21/04/01 19:24:03 INFO BlockManagerMaster: Trying to register BlockManager
+21/04/01 19:24:03 INFO BlockManagerMasterEndpoint: Registering block manager localhost:40923 with 530.0 MB RAM, BlockManagerId(driver, localhost, 40923)
+21/04/01 19:24:03 INFO BlockManagerMaster: Registered BlockManager
+21/04/01 19:24:04 INFO MemoryStore: ensureFreeSpace(120040) called with curMem=0, maxMem=555755765
+21/04/01 19:24:04 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.2 KB, free 529.9 MB)
+21/04/01 19:24:04 INFO MemoryStore: ensureFreeSpace(12673) called with curMem=120040, maxMem=555755765
+21/04/01 19:24:04 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.4 KB, free 529.9 MB)
+21/04/01 19:24:04 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:40923 (size: 12.4 KB, free: 530.0 MB)
+21/04/01 19:24:04 INFO SparkContext: Created broadcast 0 from textFile at Twitter.scala:8
+21/04/01 19:24:04 INFO FileInputFormat: Total input paths to process : 1
+21/04/01 19:24:04 INFO SparkContext: Starting job: collect at Twitter.scala:14
+21/04/01 19:24:04 INFO DAGScheduler: Registering RDD 2 (map at Twitter.scala:8)
+21/04/01 19:24:04 INFO DAGScheduler: Registering RDD 5 (map at Twitter.scala:11)
+21/04/01 19:24:04 INFO DAGScheduler: Got job 0 (collect at Twitter.scala:14) with 2 output partitions
+21/04/01 19:24:04 INFO DAGScheduler: Final stage: ResultStage 2(collect at Twitter.scala:14)
+21/04/01 19:24:04 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+21/04/01 19:24:04 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+21/04/01 19:24:04 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Twitter.scala:8), which has no missing parents
+21/04/01 19:24:04 INFO MemoryStore: ensureFreeSpace(4632) called with curMem=132713, maxMem=555755765
+21/04/01 19:24:04 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.5 KB, free 529.9 MB)
+21/04/01 19:24:04 INFO MemoryStore: ensureFreeSpace(2508) called with curMem=137345, maxMem=555755765
+21/04/01 19:24:04 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.4 KB, free 529.9 MB)
+21/04/01 19:24:04 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:40923 (size: 2.4 KB, free: 530.0 MB)
+21/04/01 19:24:04 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+21/04/01 19:24:04 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Twitter.scala:8)
+21/04/01 19:24:04 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+21/04/01 19:24:04 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2197 bytes)
+21/04/01 19:24:04 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2197 bytes)
+21/04/01 19:24:04 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/04/01 19:24:04 INFO Executor: Fetching http://198.202.114.33:44565/jars/twitter.jar with timestamp 1617330243717
+21/04/01 19:24:04 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+21/04/01 19:24:04 INFO Utils: Fetching http://198.202.114.33:44565/jars/twitter.jar to /tmp/spark-1113ad97-5fa6-4efb-8e56-74cf4d52c974/userFiles-ab45da3b-3411-4da2-ad46-60dbda94c331/fetchFileTemp3248136513897702830.tmp
+21/04/01 19:24:04 INFO Executor: Adding file:/tmp/spark-1113ad97-5fa6-4efb-8e56-74cf4d52c974/userFiles-ab45da3b-3411-4da2-ad46-60dbda94c331/twitter.jar to class loader
+21/04/01 19:24:04 INFO HadoopRDD: Input split: file:/home/dxt5888/project4/small-twitter.csv:97379+97380
+21/04/01 19:24:04 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+21/04/01 19:24:04 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+21/04/01 19:24:04 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+21/04/01 19:24:04 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+21/04/01 19:24:04 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+21/04/01 19:24:04 INFO HadoopRDD: Input split: file:/home/dxt5888/project4/small-twitter.csv:0+97379
+21/04/01 19:24:04 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2254 bytes result sent to driver
+21/04/01 19:24:04 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2254 bytes result sent to driver
+21/04/01 19:24:04 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 250 ms on localhost (1/2)
+21/04/01 19:24:04 INFO DAGScheduler: ShuffleMapStage 0 (map at Twitter.scala:8) finished in 0.290 s
+21/04/01 19:24:04 INFO DAGScheduler: looking for newly runnable stages
+21/04/01 19:24:04 INFO DAGScheduler: running: Set()
+21/04/01 19:24:04 INFO DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 2)
+21/04/01 19:24:04 INFO DAGScheduler: failed: Set()
+21/04/01 19:24:04 INFO DAGScheduler: Missing parents for ShuffleMapStage 1: List()
+21/04/01 19:24:04 INFO DAGScheduler: Missing parents for ResultStage 2: List(ShuffleMapStage 1)
+21/04/01 19:24:04 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[5] at map at Twitter.scala:11), which is now runnable
+21/04/01 19:24:05 INFO MemoryStore: ensureFreeSpace(5384) called with curMem=139853, maxMem=555755765
+21/04/01 19:24:05 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 5.3 KB, free 529.9 MB)
+21/04/01 19:24:05 INFO MemoryStore: ensureFreeSpace(2825) called with curMem=145237, maxMem=555755765
+21/04/01 19:24:05 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.8 KB, free 529.9 MB)
+21/04/01 19:24:05 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:40923 (size: 2.8 KB, free: 530.0 MB)
+21/04/01 19:24:05 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+21/04/01 19:24:05 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[5] at map at Twitter.scala:11)
+21/04/01 19:24:05 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+21/04/01 19:24:05 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 285 ms on localhost (2/2)
+21/04/01 19:24:05 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+21/04/01 19:24:05 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, localhost, PROCESS_LOCAL, 1944 bytes)
+21/04/01 19:24:05 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, localhost, PROCESS_LOCAL, 1944 bytes)
+21/04/01 19:24:05 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+21/04/01 19:24:05 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+21/04/01 19:24:05 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 1375 bytes result sent to driver
+21/04/01 19:24:05 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 1375 bytes result sent to driver
+21/04/01 19:24:05 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 216 ms on localhost (1/2)
+21/04/01 19:24:05 INFO DAGScheduler: ShuffleMapStage 1 (map at Twitter.scala:11) finished in 0.212 s
+21/04/01 19:24:05 INFO DAGScheduler: looking for newly runnable stages
+21/04/01 19:24:05 INFO DAGScheduler: running: Set()
+21/04/01 19:24:05 INFO DAGScheduler: waiting: Set(ResultStage 2)
+21/04/01 19:24:05 INFO DAGScheduler: failed: Set()
+21/04/01 19:24:05 INFO DAGScheduler: Missing parents for ResultStage 2: List()
+21/04/01 19:24:05 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 218 ms on localhost (2/2)
+21/04/01 19:24:05 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[7] at mapValues at Twitter.scala:14), which is now runnable
+21/04/01 19:24:05 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/04/01 19:24:05 INFO MemoryStore: ensureFreeSpace(5848) called with curMem=148062, maxMem=555755765
+21/04/01 19:24:05 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 5.7 KB, free 529.9 MB)
+21/04/01 19:24:05 INFO MemoryStore: ensureFreeSpace(2978) called with curMem=153910, maxMem=555755765
+21/04/01 19:24:05 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.9 KB, free 529.9 MB)
+21/04/01 19:24:05 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:40923 (size: 2.9 KB, free: 530.0 MB)
+21/04/01 19:24:05 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+21/04/01 19:24:05 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 2 (MapPartitionsRDD[7] at mapValues at Twitter.scala:14)
+21/04/01 19:24:05 INFO TaskSchedulerImpl: Adding task set 2.0 with 2 tasks
+21/04/01 19:24:05 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, localhost, PROCESS_LOCAL, 1955 bytes)
+21/04/01 19:24:05 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5, localhost, PROCESS_LOCAL, 1955 bytes)
+21/04/01 19:24:05 INFO Executor: Running task 1.0 in stage 2.0 (TID 5)
+21/04/01 19:24:05 INFO Executor: Running task 0.0 in stage 2.0 (TID 4)
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+21/04/01 19:24:05 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+21/04/01 19:24:05 INFO Executor: Finished task 0.0 in stage 2.0 (TID 4). 1368 bytes result sent to driver
+21/04/01 19:24:05 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 10 ms on localhost (1/2)
+21/04/01 19:24:05 INFO Executor: Finished task 1.0 in stage 2.0 (TID 5). 1394 bytes result sent to driver
+21/04/01 19:24:05 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 28 ms on localhost (2/2)
+21/04/01 19:24:05 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+21/04/01 19:24:05 INFO DAGScheduler: ResultStage 2 (collect at Twitter.scala:14) finished in 0.030 s
+21/04/01 19:24:05 INFO DAGScheduler: Job 0 finished: collect at Twitter.scala:14, took 0.631213 s
+(1,8527)
+(2,563)
+(3,72)
+(4,21)
+(5,3)
+(6,3)
+(7,2)
+21/04/01 19:24:05 INFO SparkContext: Invoking stop() from shutdown hook
+21/04/01 19:24:05 INFO SparkUI: Stopped Spark web UI at http://198.202.114.33:4040
+21/04/01 19:24:05 INFO DAGScheduler: Stopping DAGScheduler
+21/04/01 19:24:05 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/04/01 19:24:05 INFO MemoryStore: MemoryStore cleared
+21/04/01 19:24:05 INFO BlockManager: BlockManager stopped
+21/04/01 19:24:05 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/04/01 19:24:05 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/04/01 19:24:05 INFO SparkContext: Successfully stopped SparkContext
+21/04/01 19:24:05 INFO ShutdownHookManager: Shutdown hook called
+21/04/01 19:24:05 INFO ShutdownHookManager: Deleting directory /tmp/spark-1113ad97-5fa6-4efb-8e56-74cf4d52c974
+21/04/01 19:24:05 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+21/04/01 19:24:05 INFO RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
